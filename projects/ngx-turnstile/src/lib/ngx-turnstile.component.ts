@@ -107,12 +107,16 @@ export class NgxTurnstileComponent implements AfterViewInit, OnDestroy {
   public getResponse(): string | undefined {
     if (this.widgetId) {
       return window.turnstile.getResponse(this.widgetId);
+    } else {
+      return undefined;
     }
   }
 
   public isExpired(): boolean {
     if (this.widgetId) {
       return window.turnstile.isExpired(this.widgetId);
+    } else {
+      return true;
     }
   }
 
