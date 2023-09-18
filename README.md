@@ -12,8 +12,8 @@ An easy to use component for implementing [Cloudflare Turnstile](https://blog.cl
 Add this library to your Angular project using npm or yarn.
 
 ```bash
-yarn add ngx-turnstile
-npm install ngx-turnstile --save
+yarn add @sramizli/ngx-turnstile
+npm install @sramizli/ngx-turnstile --save
 ```
 
 ## Quickstart
