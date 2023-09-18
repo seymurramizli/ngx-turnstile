@@ -1,7 +1,7 @@
 {
   "name": "@sramizli/ngx-turnstile",
   "description": "Angular component for Cloudflare Turnstile",
-  "version": "16.1.1",
+  "version": "16.1.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/seymurramizli/ngx-turnstile"
