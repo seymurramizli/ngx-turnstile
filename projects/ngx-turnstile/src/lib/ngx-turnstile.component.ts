@@ -23,6 +23,7 @@ declare global {
         widgetIdOrContainer: string | HTMLElement,
       ) => string | undefined;
       remove: (widgetIdOrContainer: string | HTMLElement) => void;
+      isExpired: (widgetIdOrContainer: string | HTMLElement) => boolean;
     };
   }
 }
@@ -100,6 +101,18 @@ export class NgxTurnstileComponent implements AfterViewInit, OnDestroy {
     if (this.widgetId) {
       this.resolved.emit(null);
       window.turnstile.reset(this.widgetId);
+    }
+  }
+
+  public getResponse(): string | undefined {
+    if (this.widgetId) {
+      return window.turnstile.getResponse(this.widgetId);
+    }
+  }
+
+  public isExpired(): boolean {
+    if (this.widgetId) {
+      return window.turnstile.isExpired(this.widgetId);
     }
   }
 
