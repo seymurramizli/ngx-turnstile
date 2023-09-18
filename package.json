@@ -9,7 +9,15 @@
     "test": "ng test",
     "lint": "ng lint"
   },
-  "private": false,
+  "private": false,  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seymurramizli/ngx-turnstile.git"
+  },
+  "homepage": "https://github.com/seymurramizli/ngx-turnstile.git#readme",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "dependencies": {
     "@angular/animations": "^16.1.0",
     "@angular/common": "^16.1.0",
